@@ -64,7 +64,7 @@ public:
         yearEdu++;
     }
 
-    void print() {
+    void print() const {
         cout << "name: " << name << endl;
         cout << "age: " << age << endl;
         cout << "gender: " << gender << endl;
@@ -73,7 +73,7 @@ public:
         cout << endl;
     }
 
-    int getStudentsCount() {
+    int getStudentsCount() const {
         return studentsCount;
     }
 
@@ -90,11 +90,11 @@ protected:
     string color;
 
 public: 
-    string getName() {
+    string getName() const {
         return name;
     }
 
-    string getColor() {
+    string getColor() const {
         return color;
     }
 };

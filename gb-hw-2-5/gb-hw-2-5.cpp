@@ -8,7 +8,7 @@ private:
 	T p1;
 	T p2;
 public: 
-	Pair1(T inP1, T inP2) : p1(inP1), p2(inP2) {}
+	Pair1(const T& inP1, const T& inP2) : p1(inP1), p2(inP2) {}
 	T first() const {
 		return p1;
 	}
@@ -24,7 +24,7 @@ private:
 	T p1;
 	V p2;
 public:
-	Pair(T inP1, V inP2) : p1(inP1), p2(inP2) {}
+	Pair(const T& inP1, const V& inP2) : p1(inP1), p2(inP2) {}
 	T first() const {
 		return p1;
 	}
@@ -37,7 +37,7 @@ public:
 template<class V>
 class StringValuePair: public Pair<string, V> {
 public: 
-	StringValuePair(string s, V v) : Pair<string, V>(s, v) {};
+	StringValuePair(const string& s,const V& v) : Pair<string, V>(s, v) {};
 };
 
 
